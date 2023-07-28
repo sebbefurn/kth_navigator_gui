@@ -153,7 +153,7 @@ const ChatMessage = ({ message }) => {
   };
    
   return (
-    <div className="chat-message">
+    <div className={`chat-message ${message.user == "gpt" && "chatgpt"}`}>
       <div className="chat-message-center">
         <div className={`avatar ${message.user === "gpt" && "chatgpt"}`}></div>
         <div className="message" style={{ whiteSpace: "pre-wrap" }}>

@@ -92,6 +92,7 @@ form {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
 }
 
 .avatar.chatgpt {
@@ -99,13 +100,14 @@ form {
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    flex-shrink: 0;
 }
 
 
 .message {
     padding-left: 40px;
     padding-right: 40px;
-    max-width: 600px;
+    max-width: 80%;
 }
 
 .multiple-choice-box {
