@@ -1,121 +1,144 @@
 .App {
-    text-align: center;
-    display: flex;
-    background-color: #343541;
-    color: white;
-    position: absolute;
-    top: 0;bottom: 0;right: 0;left: 0;
+  text-align: center;
+  display: flex;
+  background-color: #343541;
+  color: white;
+  position: absolute;
+  top: 0;bottom: 0;right: 0;left: 0;
 }
 
 .chat-input-holder {
-  padding: 24px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+padding: 24px;
+position: absolute;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .input-container {
-    flex: 1;
-    display: flex;
-    align-items: center;
-    border-radius: 5px;
-    width: 100%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  width: 100%;
 }
 
 form {
-    width: 90%;
+  width: 90%;
 }
 
 .multiple-choice-box {
-  padding: 8px;
-  background-color: #60606e;
-  color: white;
-  border: none;
-  border-radius: 0 5px 5px 0;
-  font-size: 1.25em;
-  cursor: pointer;
-  outline: none;
+padding: 8px;
+background-color: #60606e;
+color: white;
+border: none;
+border-radius: 0 5px 5px 0;
+font-size: 1.25em;
+cursor: pointer;
+outline: none;
 }
 
 .multiple-choice-box option {
-  background-color: #60606e;
-  color: white;
+background-color: #60606e;
+color: white;
 }
 
 .chatbox {
-    flex: 1;
-    border: 1px solid white;
-    position: relative;
+  flex: 1;
+  border: 1px solid white;
+  position: relative;
 }
 
 .chat-input-textarea {
-    background-color: #40414F;
-    width: 90%;
-    padding: 12px;
-    color: white;
-    border-radius: 5px;
-    font-size: 1.25em;
-    border: none;
-    border-color: none;
-    margin: 12px;
-    outline: none;
-    box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.25);
+  background-color: #40414F;
+  width: 90%;
+  padding: 12px;
+  color: white;
+  border-radius: 5px;
+  font-size: 1.25em;
+  border: none;
+  border-color: none;
+  margin: 12px;
+  outline: none;
+  box-shadow: 0 0 8px 0px rgba(0, 0, 0, 0.25);
 }
 
 .chat-log {
-    text-align: left;
-    max-height: 80%;
-    overflow-y: auto;
+  text-align: left;
+  max-height: 89%;
+  overflow-y: auto;
 }
 
 .chat-message.chatgpt {
-    background-color: #444654;
+  background-color: #444654;
 }
 
 .chat-message-center {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-    display: flex;
-    padding: 12px;
-    padding-left: 24px;
-    padding-right: 24px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .avatar {
-    background: white;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
+  background: white;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
 .avatar.chatgpt {
-    background: #19C37D;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
+  background: #19C37D;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
 }
 
-
 .message {
-    padding-left: 40px;
-    padding-right: 40px;
-    max-width: 80%;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 80%;
 }
 
 .multiple-choice-box {
-  margin-left: 10px;
+margin-left: 10px;
 }
 
 .small-text {
-  color: white;
-  font-size: 0.8em;
-  margin-right: 10px; /* Adjust the margin as needed */
+color: white;
+font-size: 0.8em;
+margin-right: 10px; /* Adjust the margin as needed */
+}
+
+
+.message-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.message-table tr {
+  border-bottom: 1px solid #ddd;
+}
+
+.message-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.message-table a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.message-table a:hover {
+  color: #0056b3;
+  text-decoration: underline;
 }
