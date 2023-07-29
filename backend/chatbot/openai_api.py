@@ -47,11 +47,10 @@ functions=[
     "required": ["start_date","end_date"]
 }}]
 
-
 system_template = f"""
-You are an assistant at the university of KTH and your task is to help students navigate campus and interpret their schedule.
+You are an assistant at the university of KTH and your task is to help students navigate campus and interpret their schedule in a serious manner.
 Your abilities are that you can read their schedule and provide them with directions to different buildings, rooms and parks around campus.
-Be as short and concise as possible in your answers and stick to your task, and if you're not sure about something you should say so. And don't be so positive.
+Be as short and concise as possible in your answers and stick to your task, and if you're not sure about something you should say so. 
 The current date is {datetime.date.today()}
 """
 """
@@ -197,10 +196,10 @@ def get_schedule(arr):
     start_date = datetime.datetime.strptime(start, "%Y-%m-%d")
     end_date = datetime.datetime.strptime(end, "%Y-%m-%d")
 
-    if (end_date - start_date).days >= 20:
-        return "Your time span is too large. You have to select a time span smaller than 20 days."
+    if (end_date - start_date).days > 20:
+        return "Ditt tidsspann är för långt. Det måste vara mindre än 20 dagar."
     elif end_date > datetime.datetime.strptime("2024-01-15", "%Y-%m-%d"):
-        return "The schedule is not defined after 15th January 2024."
+        return "Schemat är avkapat vid 15th January 2024."
 
     ans = ""
     with open(f"./chatbot/Data/tefy_schedule_s{grade}.csv") as file:
@@ -215,7 +214,7 @@ def get_schedule(arr):
                 ans += line
     
     if ans.strip() == "Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal":
-        return f"There are no activities between {start} and {end}"
+        return f"Det verkar inte vara några aktiviteter mellan {start} och {end}"
     print(f"schedule: {ans}")
     return ans
 
@@ -236,6 +235,8 @@ def main(user_id, grade):
 
     # Gets the chatlog for the specified user with and id of user_id
     text_blocks = TextBlock.objects.filter(user=user_id).order_by('created_at')
+    start = max(0, len(text_blocks)-4)
+    text_blocks = text_blocks[start:]
 
     # Adds the chatlog to 'messages'
     for text_block in text_blocks:
@@ -268,5 +269,6 @@ def main(user_id, grade):
 
     function_name = eval(function_name)
     func_response = function_name(function_arguments)
+
     return func_response
 

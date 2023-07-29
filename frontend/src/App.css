@@ -51,6 +51,7 @@ color: white;
   flex: 1;
   border: 1px solid white;
   position: relative;
+  width: 100%;
 }
 
 .chat-input-textarea {
@@ -106,6 +107,24 @@ color: white;
   width: 40px;
   height: 40px;
   flex-shrink: 0;
+}
+
+.large-avatar {
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("./assets/skelleton_avatar.jpg");
+  background-size: auto 300px;
+  background-position: center;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  margin-bottom: 50px;
+}
+
+.empty-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .message {

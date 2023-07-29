@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from 'react';
 import './App.css';
 import Papa from 'papaparse'
 import axios from 'axios';
+import ChatMessage from './ChatMessage.jsx'
+import EmptyPage from './EmptyPage';
 
 function App() {
   const [selectedValue, setSelectedValue] = useState(1) 
@@ -66,6 +68,7 @@ function App() {
   return (
   <div className="App">
     <section className="chatbox">
+      {chatLog.length === 0 && EmptyPage()}
       <div className="chat-log" ref={chatLogRef}>
         {chatLog.map((message, index) => (
           <ChatMessage key={index} message={message} />
@@ -100,6 +103,7 @@ function App() {
   );
 }
 
+/*
 const ChatMessage = ({ message }) => {
   const convertToLinks = (inputString, specify_floor) => {
     //const regex = /\[(.*?),\((https:\/\/www\.google\.com\/maps\/place\/[\d\.,]+)\),(\d+)\]/g;
@@ -179,6 +183,6 @@ const ChatMessage = ({ message }) => {
     </div>
   );
 };
-
+*/
 
 export default App;
