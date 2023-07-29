@@ -35,18 +35,24 @@ functions=[
 "parameters": {
     "type": "object",
     "properties": {
-        "time_span": {
+        "start_date": {
             "type": "string",
-            "description": "The time span to retrieve the schedule from",
+            "description": "The start of the time span to retrieve the schedule from",
+        },
+        "end_date": {
+            "type": "string",
+            "description": "The end of the time span to retrieve the schedule from",
         }
     },
-    "required": ["time_span"]
+    "required": ["start_date","end_date"]
 }}]
 
 
 system_template = f"""
 You are an assistant at the university of KTH and your task is to help students navigate campus and interpret their schedule.
 Your abilities are that you can read their schedule and provide them with directions to different buildings, rooms and parks around campus.
+Be as short and concise as possible in your answers and stick to your task, and if you're not sure about something you should say so. And don't be so positive.
+The current date is {datetime.date.today()}
 """
 """
 user_question = "Where can I find E, V and B12?"
@@ -90,22 +96,23 @@ def test_name(name, location):
 
 def get_location(location):
     # Check the regex-places
-    df = pd.read_csv("/home/anon/Code/Other/test/chatbot/Data/regex_places.csv", delimiter='|')
+    df = pd.read_csv("./chatbot/Data/regex_places.csv", delimiter='|')
     for i in df.iterrows():
         name = i[1][0]
         floor = i[1][3]
-        print(f"name: {name}, floor: {floor}")
         if test_name(name, location) == True:
             coordinates = i[1][1]
-            ret = f"[{location}]{coordinates}"
+            ret = f"[{location},({coordinates}),"
             if floor != "None" and not math.isnan(floor):
-                ret += f" (Floor {int(floor)})"
+                ret += f"{int(floor)}]"
+            else:
+                ret += f"None]"
             # Do some more stuff with coordinates
             # print(coordinates)
             return ret
 
     # Check the levenshtein-places
-    df = pd.read_csv("/home/anon/Code/Other/test/chatbot/Data/levenshtein_places.csv", delimiter='|')
+    df = pd.read_csv("./chatbot/Data/levenshtein_places.csv", delimiter='|')
     coordinate_list = []
     best_score = -1
     tracker = -1
@@ -120,9 +127,11 @@ def get_location(location):
             tracker = index 
 
     best_guess = coordinate_list[tracker]
-    ret = f"[{best_guess[0]}]{best_guess[1]}"
+    ret = f"[{best_guess[0]},({best_guess[1]}),"
     if best_guess[2] != "None" and not math.isnan(best_guess[2]):
-        ret += f" (Floor {int(best_guess[2])})"
+        ret += f"{int(best_guess[2])}]"
+    else:
+        ret += f"None]"
     # Do some stuff with coordinates
     #print(best_guess)
     return ret
@@ -179,20 +188,23 @@ def make_location_list(rooms):
     return ret
 
 def get_schedule(arr):
-    timespan, grade = arr
-    start, end = format_date(timespan).split(',')
+    start, end, grade = arr
     start = start.strip()
     end = end.strip()
     activities = []
+    print(f"start: {start}, end: {end}")
 
     start_date = datetime.datetime.strptime(start, "%Y-%m-%d")
     end_date = datetime.datetime.strptime(end, "%Y-%m-%d")
 
     if (end_date - start_date).days >= 20:
-        return "Your time span is too large. You have to select a time span smaller than 20 days"
+        return "Your time span is too large. You have to select a time span smaller than 20 days."
+    elif end_date > datetime.datetime.strptime("2024-01-15", "%Y-%m-%d"):
+        return "The schedule is not defined after 15th January 2024."
 
     ans = ""
     with open(f"./chatbot/Data/tefy_schedule_s{grade}.csv") as file:
+        ans += file.readline()
         print(grade)
         for line in file.readlines():
             try:
@@ -200,23 +212,12 @@ def get_schedule(arr):
             except:
                 continue
             if "Begin" in line or start_date <= template_date <= end_date:
-                ans += line+'\n'
+                ans += line
     
+    if ans.strip() == "Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal":
+        return f"There are no activities between {start} and {end}"
+    print(f"schedule: {ans}")
     return ans
-
-    df = pd.read_csv(f"/home/anon/Code/Other/test/chatbot/Data/tefy_schedule_s{grade}.csv", delimiter=',')
-    for i in df.iterrows():
-        template_date = datetime.datetime.strptime(i[1][0], "%Y-%m-%d")
-        if start_date <= template_date <= end_date:
-            activities.append([i[1][0], i[1][1], i[1][3], i[1][4], i[1][6], i[1][7]])
-    
-    answer = ""
-    for activity in activities:
-        rooms = make_location_list(activity[5].split(','))
-        answer += f"date: {activity[0]},start: {activity[1]},end: {activity[2]},activity: {activity[3]},course: {activity[4]},room: {rooms}\n"
-    if answer == "":
-        return f"There are no activities happening on {timespan}"
-    return answer
 
 def get_microwaves():
     # Read data from microwave file and just return it pretty much
@@ -263,7 +264,7 @@ def main(user_id, grade):
     if function_name == 'get_locations':
         function_arguments = function_arguments['locations']
     else:
-        function_arguments = [function_arguments['time_span'], grade]
+        function_arguments = [function_arguments['start_date'], function_arguments['end_date'], grade]
 
     function_name = eval(function_name)
     func_response = function_name(function_arguments)
