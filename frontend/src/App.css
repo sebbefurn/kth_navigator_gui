@@ -88,7 +88,10 @@ color: white;
 }
 
 .avatar {
-  background: white;
+  background-image: url("./assets/nerd_avatar.jpg");
+  background-size: auto 40px;
+  background-position-x: center;
+  background-position-y: bottom;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -96,7 +99,9 @@ color: white;
 }
 
 .avatar.chatgpt {
-  background: #19C37D;
+  background-image: url("./assets/skelleton_avatar.jpg");
+  background-size: auto 40px;
+  background-position: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
@@ -119,26 +124,13 @@ font-size: 0.8em;
 margin-right: 10px; /* Adjust the margin as needed */
 }
 
-
 .message-table {
-  width: 100%;
   border-collapse: collapse;
 }
 
-.message-table tr {
-  border-bottom: 1px solid #ddd;
-}
-
-.message-table tr:nth-child(even) {
-  background-color: #f2f2f2;
-}
-
-.message-table a {
-  color: #007BFF;
-  text-decoration: none;
-}
-
-.message-table a:hover {
-  color: #0056b3;
-  text-decoration: underline;
+.message-table td, th {
+  padding: 5px;
+  text-align: left;
+  vertical-align: middle;
+  border: 0px solid black;
 }

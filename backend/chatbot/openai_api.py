@@ -51,6 +51,7 @@ functions=[
 system_template = f"""
 You are an assistant at the university of KTH and your task is to help students navigate campus and interpret their schedule.
 Your abilities are that you can read their schedule and provide them with directions to different buildings, rooms and parks around campus.
+Be as short and concise as possible in your answers and stick to your task, and if you're not sure about something you should say so. And don't be so positive.
 The current date is {datetime.date.today()}
 """
 """
@@ -95,22 +96,23 @@ def test_name(name, location):
 
 def get_location(location):
     # Check the regex-places
-    df = pd.read_csv("/home/anon/Code/Other/test/chatbot/Data/regex_places.csv", delimiter='|')
+    df = pd.read_csv("./chatbot/Data/regex_places.csv", delimiter='|')
     for i in df.iterrows():
         name = i[1][0]
         floor = i[1][3]
-        print(f"name: {name}, floor: {floor}")
         if test_name(name, location) == True:
             coordinates = i[1][1]
-            ret = f"[{location}]{coordinates}"
+            ret = f"[{location},({coordinates}),"
             if floor != "None" and not math.isnan(floor):
-                ret += f" (Floor {int(floor)})"
+                ret += f"{int(floor)}]"
+            else:
+                ret += f"None]"
             # Do some more stuff with coordinates
             # print(coordinates)
             return ret
 
     # Check the levenshtein-places
-    df = pd.read_csv("/home/anon/Code/Other/test/chatbot/Data/levenshtein_places.csv", delimiter='|')
+    df = pd.read_csv("./chatbot/Data/levenshtein_places.csv", delimiter='|')
     coordinate_list = []
     best_score = -1
     tracker = -1
@@ -125,9 +127,11 @@ def get_location(location):
             tracker = index 
 
     best_guess = coordinate_list[tracker]
-    ret = f"[{best_guess[0]}]{best_guess[1]}"
+    ret = f"[{best_guess[0]},({best_guess[1]}),"
     if best_guess[2] != "None" and not math.isnan(best_guess[2]):
-        ret += f" (Floor {int(best_guess[2])})"
+        ret += f"{int(best_guess[2])}]"
+    else:
+        ret += f"None]"
     # Do some stuff with coordinates
     #print(best_guess)
     return ret
@@ -210,8 +214,9 @@ def get_schedule(arr):
             if "Begin" in line or start_date <= template_date <= end_date:
                 ans += line
     
-    if ans == "":
+    if ans.strip() == "Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal":
         return f"There are no activities between {start} and {end}"
+    print(f"schedule: {ans}")
     return ans
 
 def get_microwaves():

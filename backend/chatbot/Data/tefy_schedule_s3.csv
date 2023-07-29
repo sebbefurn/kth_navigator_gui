@@ -13,7 +13,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-08-23,08:00,13:00,Omtenta,SH2402,FP21
 2023-08-28,09:00,10:00,Information,8XCTFYS,"[V2,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
 2023-08-28,10:00,12:00,Föreläsning,EL1000,"[M1,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2]"
-2023-08-28,13:00,15:00,Föreläsning,EI1320,H1
+2023-08-28,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-08-28,15:00,17:00,Övning,EI1320,"[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q36,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-08-29,08:00,10:00,Föreläsning,EI1320,"[W37,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),3]"
 2023-08-29,13:00,15:00,Övning,EI1320,"[M32,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M33,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3]"
@@ -21,7 +21,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-08-29,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
 2023-08-30,08:00,10:00,Övning,EL1000,"[Q13,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q22,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q24,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2]"
 2023-08-30,10:00,12:00,Övning,EL1000,"[D32,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3],[D41,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),4]"
-2023-08-30,13:00,15:00,Föreläsning,EI1320,H1
+2023-08-30,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-08-31,10:00,12:00,Övning,EI1320,"[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q36,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-08-31,13:00,17:00,Laboration,EL1000,A:225
 2023-08-31,13:00,15:00,Övning,EL1000,"[Q11,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q13,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1]"
@@ -34,7 +34,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-09-01,13:00,17:00,Laboration,EL1000,A:225
 2023-09-04,08:00,12:00,Laboration,EL1000,A:225
 2023-09-04,08:00,10:00,Övning,SF2940,"[Q22,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[Q33,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[Q34,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[V12,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3]"
-2023-09-04,10:00,12:00,Föreläsning,EI1320,H1
+2023-09-04,10:00,12:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-09-04,13:00,15:00,Övning,EI1320,"[V21,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[V22,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4]"
 2023-09-04,15:00,17:00,Föreläsning,EL1000,"[E1,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3]"
 2023-09-04,15:00,16:00,www.kth.se/form/libraryfair4sep,,
@@ -53,7 +53,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-09-07,08:00,10:00,Föreläsning,EL1000,"[D1,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),6]"
 2023-09-07,13:00,15:00,Föreläsning,SH1015,"[FD5,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-09-07,13:00,17:00,Laboration,EL1000,A:225
-2023-09-07,15:00,17:00,Föreläsning,EI1320,H1
+2023-09-07,15:00,17:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-09-07,15:00,17:00,Övning,SF2940,"[E31,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E33,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E34,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E51,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E53,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
 2023-09-08,08:00,12:00,Laboration,EL1000,A:225
 2023-09-08,08:00,10:00,Räknestuga,EL1000,"[Q36,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
@@ -71,11 +71,11 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-09-12,13:00,17:00,Laboration,SH1015,"Kärnlabbet,RB33"
 2023-09-12,13:00,15:00,Övning,EL1000,"XQ23,XQ32"
 2023-09-12,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
-2023-09-13,08:00,10:00,Föreläsning,EI1320,H1
+2023-09-13,08:00,10:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-09-13,10:00,12:00,Föreläsning,EL1000,"[F2,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-09-13,13:00,15:00,Övning,EI1320,"[Q17,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q34,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-09-13,15:00,17:00,Räknestuga,EL1000,"[Q36,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
-2023-09-14,08:00,10:00,Föreläsning,EI1320,H1
+2023-09-14,08:00,10:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-09-14,10:00,12:00,Övning,EL1000,"[Q22,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q24,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2]"
 2023-09-14,13:00,15:00,Övning,EL1000,"[V11,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3],[V12,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3]"
 2023-09-14,13:00,15:00,Övning,SF2940,"[D41,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),4],[E35,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E51,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E53,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[Q15,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1]"
@@ -107,7 +107,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-09-25,10:00,12:00,Övning,EL1000,"XQ23,XQ32"
 2023-09-25,13:00,17:00,Laboration,EL1000,A:225
 2023-09-26,08:00,10:00,Övning,SF2940,"[V01,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),2],[V11,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3],[V12,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3],[V21,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[V23,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[V33,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
-2023-09-26,10:00,12:00,Föreläsning,EI1320,H1
+2023-09-26,10:00,12:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-09-26,13:00,17:00,Laboration,EL1000,A:225
 2023-09-26,13:00,17:00,Laboration,SH1015,"013:012,013:013B,Kärnlabbet,RB33"
 2023-09-26,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
@@ -121,7 +121,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-09-29,08:00,12:00,Laboration,EL1000,A:225
 2023-09-29,08:00,10:00,Övning,SF2940,"[Q13,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q22,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q24,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[V01,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),2],[V11,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3],[V21,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4]"
 2023-09-29,10:00,12:00,Övning,EL1000,"[B21,(https://www.google.com/maps/place/59.35151479446071,18.068663853571927),3],[B22,(https://www.google.com/maps/place/59.35151479446071,18.068663853571927),3],[B23,(https://www.google.com/maps/place/59.35151479446071,18.068663853571927),3]"
-2023-09-29,13:00,15:00,Föreläsning,EI1320,H1
+2023-09-29,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-09-29,13:00,17:00,Laboration,EL1000,A:225
 2023-09-29,15:00,17:00,Övning,EI1320,"[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-10-02,08:00,10:00,Kontrollskrivning,EI1320,"[M23,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2],[M24,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2],[M33,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M36,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M37,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M38,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3]"
@@ -135,7 +135,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-10-03,17:00,19:00,Seminarium,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
 2023-10-04,08:00,10:00,Föreläsning,EL1000,"[F2,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-10-04,10:00,12:00,Räknestuga,EL1000,"[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
-2023-10-04,13:00,15:00,Föreläsning,EI1320,H1
+2023-10-04,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-10-04,13:00,15:00,Övning,SF2940,"[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U51,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),5],[U61,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),6],[V01,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),2],[V12,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),3]"
 2023-10-04,15:00,17:00,Övning,EI1320,"[Q21,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q22,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2]"
 2023-10-05,08:00,12:00,Laboration,EL1000,A:225
@@ -148,13 +148,13 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-10-09,13:00,18:00,Information,"8XCTFYS, 8XCFATE, 8XCTMAT",Digital
 2023-10-10,08:00,10:00,Räknestuga,EL1000,"[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-10-10,08:00,10:00,Övning,SF2940,"[E31,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E33,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E35,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E51,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E53,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
-2023-10-10,10:00,12:00,Föreläsning,EI1320,H1
+2023-10-10,10:00,12:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-10-10,13:00,15:00,Övning,EI1320,"[V34,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V35,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
 2023-10-10,15:00,16:00,Information,8XCTFYS,"[K2,(https://www.google.com/maps/place/59.349614994822716,18.074470218046066),5]"
 2023-10-10,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
 2023-10-11,08:00,12:00,Datorlaboration,EL1000,"XQ25,XQ32"
 2023-10-11,08:00,12:00,Laboration,SH1015,"013:012,013:013B,Kärnlabbet,RB33"
-2023-10-11,13:00,15:00,Föreläsning,EI1320,H1
+2023-10-11,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-10-11,15:00,17:00,Övning,EI1320,"[V21,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[V22,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4]"
 2023-10-12,08:00,12:00,Datorlaboration,EL1000,"XQ23,XQ32"
 2023-10-12,09:00,12:00,Information,8XCELTE,L1
@@ -162,7 +162,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-10-13,08:00,10:00,Föreläsning,SF2940,"[M1,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2]"
 2023-10-13,08:00,12:00,Laboration,SH1015,"013:012,013:013B,Kärnlabbet,RB33"
 2023-10-13,10:00,12:00,Övning,SF2940,"[M23,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2],[M24,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2],[M31,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M32,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M33,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3]"
-2023-10-13,13:00,15:00,Föreläsning,EI1320,H1
+2023-10-13,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-10-13,15:00,17:00,Övning,EI1320,"[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-10-16,08:00,17:00,Eget arbete,,
 2023-10-17,08:00,17:00,Eget arbete,,
@@ -174,7 +174,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-10-23,13:00,14:00,Tentadag,,
 2023-10-24,08:00,13:00,Tentamen,EL1000,"[E31,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E33,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E34,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E35,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E36,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E51,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E53,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
 2023-10-24,13:00,14:00,Tentadag,,
-2023-10-25,10:00,12:00,Räknestuga,EI1320,H1
+2023-10-25,10:00,12:00,Räknestuga,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-10-25,13:00,14:00,Tentadag,,
 2023-10-26,08:00,13:00,Tentamen,EI1320,"[E31,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E33,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E34,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E35,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E36,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
 2023-10-26,13:00,14:00,Tentadag,,
@@ -184,15 +184,15 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-10-30,15:00,17:00,Föreläsning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
 2023-10-31,13:00,15:00,Föreläsning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
 2023-10-31,15:00,17:00,Föreläsning,SF1811,"[D1,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),6]"
-2023-10-31,15:00,17:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-10-31,15:00,17:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-10-31,17:00,19:00,Projektarbete,MH1023,
 2023-11-01,10:00,12:00,Föreläsning,SG1218,"[D2,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
 2023-11-01,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
-2023-11-02,13:00,15:00,Föreläsning,EI1320,H1
+2023-11-02,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-11-02,15:00,17:00,Föreläsning,SF1811,"[D1,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),6]"
 2023-11-02,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-11-02,15:00,17:00,Övning,EI1320,"[V23,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[V33,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
-2023-11-03,08:00,10:00,Föreläsning,EI1320,H1
+2023-11-03,08:00,10:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-11-03,08:00,10:00,Övning,SF1811,"[U21,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),2],[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3]"
 2023-11-03,10:00,12:00,Övning,EI1320,"[V21,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[W38,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),3]"
 2023-11-03,13:00,15:00,Övning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
@@ -207,13 +207,13 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-11-07,08:00,10:00,Föreläsning,SF1811,"[D1,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),6]"
 2023-11-07,08:00,10:00,Lektion,DD2380,"[Q21,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q34,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-11-07,10:00,12:00,Föreläsning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
-2023-11-07,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
-2023-11-07,13:00,15:00,Föreläsning,EI1320,H1
-2023-11-07,15:00,17:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-11-07,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-11-07,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
+2023-11-07,15:00,17:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-11-07,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
-2023-11-08,08:00,10:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-11-08,08:00,10:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-08,10:00,12:00,Föreläsning,SG1218,"[D2,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
-2023-11-08,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-11-08,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-08,12:00,14:00,"KTH Global, www.kth.se/global",,
 2023-11-09,10:00,12:00,Föreläsning,SF1811,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-11-09,10:00,12:00,Övning,EI1320,"[V01,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),2],[V22,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4]"
@@ -226,11 +226,11 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-11-10,14:00,15:00,Seminarium,SI1336,"FP21,FP22"
 2023-11-10,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-11-13,13:00,15:00,Föreläsning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
-2023-11-13,15:00,17:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-11-13,15:00,17:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-11-14,10:00,12:00,Övning,SF1811,"[W42,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),4],[W43,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),4]"
 2023-11-14,13:00,15:00,Föreläsning,SF1811,"[E1,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3]"
 2023-11-14,13:00,15:00,Föreläsning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
-2023-11-14,15:00,17:00,Föreläsning,EI1320,H1
+2023-11-14,15:00,17:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-11-14,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
 2023-11-15,10:00,12:00,Föreläsning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
 2023-11-15,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
@@ -243,17 +243,17 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-11-20,08:00,10:00,Kontrollskrivning,EI1320,"[M23,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2],[M24,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2],[M31,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M32,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M33,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[V34,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
 2023-11-20,10:00,12:00,Lektion,DD2380,"[D34,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3],[E51,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
 2023-11-20,13:00,15:00,Lektion,DD2380,"[V33,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V35,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
-2023-11-20,15:00,17:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-11-20,15:00,17:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-11-21,08:00,10:00,Lektion,DD2380,"[V33,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V35,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
-2023-11-21,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-11-21,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-21,10:00,16:00,THS Armada – event.armada.nu,,
-2023-11-21,13:00,15:00,Föreläsning,EI1320,H1
+2023-11-21,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-11-21,15:00,17:00,Föreläsning,SF1811,"[Q1,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-11-21,15:00,17:00,Övning,EI1320,"[M32,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3],[M33,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),3]"
-2023-11-22,08:00,10:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
-2023-11-22,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-11-22,08:00,10:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-11-22,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-22,10:00,16:00,THS Armada – event.armada.nu,,
-2023-11-22,13:00,15:00,Föreläsning,EI1320,H1
+2023-11-22,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-11-22,15:00,17:00,Övning,EI1320,"[Q26,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q33,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-11-23,10:00,12:00,Föreläsning,SF1811,"[Q1,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-11-23,10:00,11:00,Seminarium,SG1218,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U31 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
@@ -265,21 +265,21 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-11-24,13:00,14:00,Seminarium,SI1336,"FP21,FP22"
 2023-11-24,13:00,15:00,Övning,SF1811,"[V1,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),6],[V2,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
 2023-11-24,14:00,15:00,Seminarium,SI1336,"FP21,FP22"
-2023-11-27,08:00,10:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
-2023-11-27,08:00,12:00,Redovisning,DD2380,Glader
+2023-11-27,08:00,10:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
+2023-11-27,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-27,10:00,12:00,Laboration,SG1218,
 2023-11-27,13:00,15:00,Laboration,SG1218,
 2023-11-27,15:00,17:00,Laboration,SG1218,
 2023-11-28,08:00,11:00,Kontrollskrivning,SG1218,"[E31,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E33,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E34,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E35,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E36,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
-2023-11-28,08:00,12:00,Redovisning,DD2380,Glader
+2023-11-28,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-28,10:00,12:00,Laboration,SG1218,
 2023-11-28,13:00,15:00,Laboration,SG1218,
 2023-11-28,15:00,17:00,Föreläsning,SF1811,"[E1,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3]"
 2023-11-28,15:00,17:00,Laboration,SG1218,
 2023-11-29,08:00,10:00,Laboration,SG1218,
-2023-11-29,08:00,12:00,Redovisning,DD2380,Glader
+2023-11-29,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-11-29,10:00,12:00,Laboration,SG1218,
-2023-11-29,13:00,15:00,Föreläsning,EI1320,H1
+2023-11-29,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-11-29,13:00,15:00,Laboration,SG1218,
 2023-11-29,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-11-29,15:00,16:00,Seminarium,SG1218,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U31 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
@@ -289,8 +289,8 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-11-30,10:00,12:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-11-30,10:00,12:00,Laboration,SG1218,
 2023-11-30,10:00,12:00,Övning,EI1320,"[V01,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),2],[W25,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),2]"
-2023-11-30,13:00,15:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
-2023-11-30,15:00,17:00,Föreläsning,EI1320,H1
+2023-11-30,13:00,15:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
+2023-11-30,15:00,17:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-12-01,08:00,10:00,Laboration,SG1218,
 2023-12-01,10:00,12:00,Laboration,SG1218,
 2023-12-01,10:00,12:00,Övning,EI1320,"[U51,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),5],[U61,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),6]"
@@ -298,7 +298,7 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-12-01,13:00,15:00,Laboration,SG1218,
 2023-12-01,13:00,15:00,Övning,SF1811,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
 2023-12-01,15:00,17:00,Laboration,SG1218,
-2023-12-04,08:00,12:00,Redovisning,DD2380,Glader
+2023-12-04,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-04,08:00,09:00,Seminarium,SG1218,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U31 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
 2023-12-04,08:00,09:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-04,09:00,10:00,Seminarium,SG1218,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U31 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
@@ -306,29 +306,29 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-12-04,10:00,11:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-04,11:00,12:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-04,12:00,17:00,"Storträff -undvik frl, le, ex",,
-2023-12-04,13:00,15:00,Föreläsning,EI1320,H1
+2023-12-04,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
 2023-12-04,15:00,17:00,Övning,EI1320,"[V01,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),2],[W25,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),2]"
 2023-12-05,08:00,10:00,Laboration,SG1218,
-2023-12-05,08:00,12:00,Redovisning,DD2380,Glader
+2023-12-05,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-05,10:00,12:00,Föreläsning,SF1811,"[Q1,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
 2023-12-05,10:00,12:00,Laboration,SG1218,
-2023-12-05,13:00,15:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-12-05,13:00,15:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-12-05,13:00,15:00,Laboration,SG1218,
 2023-12-05,13:00,15:00,Lektion,DD2380,"[V34,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V35,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
-2023-12-05,15:00,17:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-05,15:00,17:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-05,15:00,17:00,Laboration,SG1218,
 2023-12-05,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
 2023-12-06,08:00,10:00,Laboration,SG1218,
-2023-12-06,08:00,12:00,Redovisning,DD2380,Glader
+2023-12-06,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-06,10:00,12:00,Föreläsning,SF1811,"[D1,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),6]"
 2023-12-06,10:00,12:00,Laboration,SG1218,
 2023-12-06,13:00,15:00,Laboration,SG1218,
 2023-12-06,13:00,15:00,Lektion,DD2380,"[Q21,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
-2023-12-06,15:00,17:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-06,15:00,17:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-06,15:00,17:00,Laboration,SG1218,
 2023-12-07,08:00,10:00,Laboration,SG1218,
 2023-12-07,08:00,10:00,Lektion,DD2380,"[V33,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V35,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
-2023-12-07,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-07,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-07,10:00,12:00,Laboration,SG1218,
 2023-12-07,13:00,15:00,Laboration,SG1218,
 2023-12-07,15:00,17:00,Laboration,SG1218,
@@ -340,42 +340,42 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2023-12-08,13:00,14:00,Seminarium,SG1218,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U31 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
 2023-12-08,14:00,15:00,Seminarium,SG1218,"[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U31 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4]"
 2023-12-08,15:00,17:00,Laboration,SG1218,
-2023-12-11,08:00,12:00,Redovisning,DD2380,Glader
+2023-12-11,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-11,13:00,15:00,Föreläsning,SF1811,"[E1,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3]"
 2023-12-11,13:00,15:00,Räknestuga,SI1336,"[M1,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),2]"
-2023-12-11,15:00,17:00,Seminarium,SH1015,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
-2023-12-12,08:00,12:00,Redovisning,DD2380,Glader
-2023-12-12,13:00,15:00,Föreläsning,EI1320,H1
-2023-12-12,15:00,17:00,Seminarium,SH1015,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-12-11,15:00,17:00,Seminarium,SH1015,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
+2023-12-12,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-12,13:00,15:00,Föreläsning,EI1320,"[H1,(https://www.google.com/maps/place/59.34953149792655,18.073021007320307),5]"
+2023-12-12,15:00,17:00,Seminarium,SH1015,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-12-12,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
-2023-12-13,08:00,12:00,Redovisning,DD2380,Glader
+2023-12-13,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-13,08:00,09:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-13,09:00,10:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-13,10:00,12:00,Föreläsning,SF1811,"[E1,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3]"
 2023-12-13,10:00,11:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-13,11:00,12:00,Seminarium,SI1336,"[FA31,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3],[FB51,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),5]"
 2023-12-13,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
-2023-12-14,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
-2023-12-14,13:00,15:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2023-12-14,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-14,13:00,15:00,Föreläsning,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2023-12-14,15:00,17:00,Övning,SF1811,"[W37,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),3],[W38,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),3]"
 2023-12-14,15:00,17:00,Övning,SG1218,"[K1,(https://www.google.com/maps/place/59.350177053406284,18.074668106453814),3]"
 2023-12-14,17:00,19:00,Föreläsning,MH1023,"[D35,(https://www.google.com/maps/place/59.346842984153625,18.073876046419205),3]"
-2023-12-15,08:00,10:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
-2023-12-15,10:00,12:00,Laboration,DD2380,"Glader,[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-15,08:00,10:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-15,10:00,12:00,Laboration,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4],[Prosit,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-15,10:00,12:00,Övning,EI1320,"[V22,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4],[V23,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),4]"
 2023-12-15,13:00,15:00,Redovisning,SG1218,"[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U41 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U51,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),5],[U51 Break-out,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),5]"
 2023-12-15,13:00,15:00,Övning,SF1811,"[W37,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),3],[W38,(https://www.google.com/maps/place/59.350841141120135,18.070559793099424),3]"
 2023-12-15,15:00,17:00,Föreläsning,DD2380,"[F1,(https://www.google.com/maps/place/59.348382721980045,18.074164283936792),2]"
 2023-12-18,08:00,13:00,Omtenta,EL1000,"[Q24,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[Q33,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
-2023-12-18,08:00,12:00,Redovisning,DD2380,Glader
-2023-12-18,13:00,17:00,Redovisning,DD2380,Glader
+2023-12-18,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-18,13:00,17:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-18,13:00,14:00,Omtentadag,,
 2023-12-19,08:00,12:00,Omtenta,SF2940,"[Q31,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[Q33,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[Q34,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3],[Q36,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),3]"
-2023-12-19,08:00,12:00,Redovisning,DD2380,Glader
-2023-12-19,13:00,17:00,Redovisning,DD2380,Glader
+2023-12-19,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-19,13:00,17:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-19,13:00,14:00,Omtentadag,,
-2023-12-20,08:00,12:00,Redovisning,DD2380,Glader
-2023-12-20,13:00,17:00,Redovisning,DD2380,Glader
+2023-12-20,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2023-12-20,13:00,17:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2023-12-20,13:00,14:00,Omtentadag,,
 2023-12-21,08:00,13:00,Omtenta,EI1320,"[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U51,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),5]"
 2023-12-21,13:00,14:00,Omtentadag,,
@@ -393,19 +393,19 @@ Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal
 2024-01-04,08:00,17:00,Eget arbete,,
 2024-01-05,08:00,17:00,Eget arbete,,
 2024-01-06,00:00,00:00,Trettondedag jul,,
-2024-01-08,08:00,12:00,Redovisning,DD2380,Glader
-2024-01-08,13:00,17:00,Redovisning,DD2380,Glader
+2024-01-08,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2024-01-08,13:00,17:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2024-01-08,13:00,14:00,Tentadag,,
-2024-01-09,08:00,12:00,Redovisning,DD2380,Glader
-2024-01-09,13:00,17:00,Redovisning,DD2380,Glader
+2024-01-09,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2024-01-09,13:00,17:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2024-01-09,13:00,14:00,Tentadag,,
 2024-01-09,14:00,19:00,Tentamen,SG1218,"[E34,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E35,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E36,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),3],[E51,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E52,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5],[E53,(https://www.google.com/maps/place/59.34704027500101,18.072885775270187),5]"
-2024-01-10,08:00,12:00,Redovisning,DD2380,Glader
-2024-01-10,13:00,17:00,Redovisning,DD2380,Glader
+2024-01-10,08:00,12:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
+2024-01-10,13:00,17:00,Redovisning,DD2380,"[Glader,(https://www.google.com/maps/place/59.35338034344207,18.065376926562575),4]"
 2024-01-10,13:00,14:00,Tentadag,,
 2024-01-11,08:00,13:00,Tentamen,SF1811,"[Q11,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q13,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q15,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q17,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),1],[Q24,(https://www.google.com/maps/place/59.35024453850851,18.06714300371682),2],[V32,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V33,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5],[V34,(https://www.google.com/maps/place/59.35110174493043,18.071114815207327),5]"
 2024-01-11,13:00,14:00,Tentadag,,
-2024-01-11,14:00,16:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3,4]"
+2024-01-11,14:00,16:00,Räknestuga,SI1336,"[FR4,(https://www.google.com/maps/place/59.35393306147455,18.057654294803914),3]"
 2024-01-12,08:00,13:00,Tentamen,SF2520,"[U21,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),2],[U31,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),3],[U41,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),4],[U51,(https://www.google.com/maps/place/59.35100405505016,18.07004819394063),5]"
 2024-01-12,13:00,15:00,Räknestuga,EI1320,
 2024-01-12,13:00,14:00,Tentadag,,
