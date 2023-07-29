@@ -196,10 +196,10 @@ def get_schedule(arr):
     start_date = datetime.datetime.strptime(start, "%Y-%m-%d")
     end_date = datetime.datetime.strptime(end, "%Y-%m-%d")
 
-    if (end_date - start_date).days > 20:
-        return "Ditt tidsspann är för långt. Det måste vara mindre än 20 dagar."
-    elif end_date > datetime.datetime.strptime("2024-01-15", "%Y-%m-%d"):
-        return "Schemat är avkapat vid 15th January 2024."
+    end_date = min(end_date, start_date+datetime.timedelta(days=10))
+
+    if start_date > datetime.datetime.strptime("2024-01-15", "%Y-%m-%d"):
+        return "Schemat är avkapat vid 15e January 2024."
 
     ans = ""
     with open(f"./chatbot/Data/tefy_schedule_s{grade}.csv") as file:
