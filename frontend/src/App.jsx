@@ -5,6 +5,8 @@ import axios from 'axios';
 import ChatMessage from './ChatMessage.jsx'
 import EmptyPage from './EmptyPage';
 
+const IP = 'http://188.166.164.235';
+
 function App() {
   const [selectedValue, setSelectedValue] = useState(1) 
   const [user_id, setUserId] = useState()
@@ -15,7 +17,7 @@ function App() {
   // Function to create a new user
   const createUser = async () => {
     try {
-      const response = await axios.post('http://localhost:8000/api/create-user/', {
+      const response = await axios.post(`${IP}/api/create-user/`, {
         course: null,
         grade: null,
       });
@@ -34,7 +36,7 @@ function App() {
     e.preventDefault();
     setChatLog((chatLog) => [...chatLog, {user: "me", message: `${input}`}]);
     setInput("");
-    axios.post('http://localhost:8000/api/create-text/', {
+    axios.post(`${IP}/api/create-text/`, {
       text: `${input}`,
       user: user_id,
       is_user: true,
