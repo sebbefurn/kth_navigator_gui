@@ -68,6 +68,22 @@ function App() {
     setIsLoggedIn(true);
   };
 
+  async function clearScreen(e) {
+    e.preventDefault();
+    axios.post(`${IP}/api/clear-chat/`, {
+      user: user_id,
+    })
+      .then(response => {
+        // Handle the response (e.g., display success message)
+        const success = response.data['success'];
+        setChatLog([]);
+      })
+      .catch(error => {
+        // Handle any errors
+        console.error(error);
+    });
+  }
+
   return (
   <div className="App">
     {!isLoggedIn ? (
@@ -75,6 +91,7 @@ function App() {
     ) : (
 
     <section className="chatbox">
+      <button className='clear-button' onClick={clearScreen}>Clear</button>
       {chatLog.length === 0 && EmptyPage()}
       <div className="chat-log" ref={chatLogRef}>
         {chatLog.map((message, index) => (
@@ -90,18 +107,6 @@ function App() {
             className="chat-input-textarea"
             placeholder="Type here"
           />
-        <p className='small_text'>Grade:</p>
-          <select
-            value={selectedValue}
-            onChange={(e) => setSelectedValue(parseInt(e.target.value))}
-            className="multiple-choice-box"
-          >
-            {[1, 2, 3, 4, 5].map((option) => (
-              <option key={option} value={option}>
-                {option}
-              </option>
-            ))}
-          </select>
         </div>
       </form>
     </div>

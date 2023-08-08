@@ -16,7 +16,7 @@ llm4 = "gpt-4-0613"
 functions=[
 {
 "name": "get_locations",
-"description": "Provides directions to multiple locations",
+"description": "Provides directions to multiple locations and gives floor number",
 "parameters": {
     "type": "object",
     "properties": {
@@ -32,21 +32,18 @@ functions=[
 }},
 {
 "name": "get_schedule",
-"description": "Provides the schedule within a time span",
+"description": "Provides schedule from a startdate and can also show more of a schedule",
 "parameters": {
     "type": "object",
     "properties": {
-        "start_date": {
+        "start-date": {
             "type": "string",
-            "description": "The start of the time span to retrieve the schedule from",
-        },
-        "end_date": {
-            "type": "string",
-            "description": "The end of the time span to retrieve the schedule from",
+            "description": "The date start retrieving the schedule from"
         }
     },
-    "required": ["start_date","end_date"]
-}}]
+    "required": []
+}
+}]
 
 system_template = f"""
 Du är en assistent vid KTH universitet och din uppgift är att hjälpa studenter att navigera runt campus och tolka deras schema på ett seriöst sätt.
@@ -178,21 +175,27 @@ def get_schedule(x):
     print(f"grade: {grade}, program: {program}")
 
     sql_template = f"""
-Du är expert på SQL och din uppgift är att hämta de relevanta raderna utifrån användarens önskemål. Din SQL query ska alltid börja med "SELECT * FROM" oberoende vad som frågas efter.
+Du är expert på SQL och har som uppgift att skriva en SQL query till mitt schema. 
 
-SQL tabellen heter schedule_tefy_1 och har följande kolumner: Startdatum,Starttid,Sluttid,Aktivitet,Kurskod,Lokal
+SQL tabellen heter schedule_tefy_{grade} och har följande kolumner: Startdatum,Starttid,Sluttid,Aktivitet,Kurskod,Lokal
 
 Startdatum definieras: YYYY-MM-DD
 Starttid och Sluttid definieras: XX:YY
 
-Det här är de aktiviteter som förekommer: Föreläsning, Övning, Datorlaboration, Kontrollskrivning, Omtenta, Tentadag, Eget arbete
+Det här är några av de aktiviteter som förekommer: Föreläsning, Övning, Datorlaboration, Kontrollskrivning, Omtenta, Tentadag, Eget arbete
+
+Din SQL query ska alltid börja med "SELECT * FROM" oberoende vad som frågas efter. Du ska alltid ge tillbaka hela rader.
 
 Jag vill kunna lägga in ditt svar i mysql prompten direkt, så se till att endast skriva SQL queryn utan någonting annat.
 
 Det nuvarande datumet är: {datetime.datetime.now()}
+
+Jag vill att SQL queryn ska utgå från det nuvarande datumet. Men om användaren undrar om något annat datum så ska du utgå från det. Försök gissa så bra du kan vilket datum du ska börja utifrån. Om användaren har fått schemat för en tidigare vecka och den frågar efter mer så ska du fortsätta från slutdatumet till exampel.
+
+Kom ihåg att inte skriva någonting annat i ditt svar förutom SQL queryn.
 """
 
-    messages[0] = {"role": "system", "content": sql_template}
+    messages[0] = {"role": "system", "content": sql_template} 
 
     sql_query = openai.ChatCompletion.create(
         model=llm4,
@@ -221,10 +224,17 @@ Det nuvarande datumet är: {datetime.datetime.now()}
     print(f"RES: {res}")
 
     ans = "Startdatum|Starttid|Sluttid|Aktivitet|Kurskod|Lokal\n"
-    
+
+    additional = ""    
+    if (len(res) > 18):
+        res = res[:18]
+        additional="Jag kan bara visa <b>18</b> aktiviteter åt gången"
+
     for i in res:
         ans += '|'.join(i)
         ans += '\n'
+
+    ans += additional
 
     ret = ""
     for row in res:
@@ -234,6 +244,7 @@ Det nuvarande datumet är: {datetime.datetime.now()}
         ret += ',"' + ','.join(re.findall(r'\[([^,]+)', places)) + '"'
         ret += '\n'
 
+    ret += additional
     print(f"RET: {ret}")
     return [ans, ret]
 

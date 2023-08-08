@@ -45,10 +45,6 @@ const Login = ( {onLogin} ) => {
                     >
                         <option value="None">None</option>
                         <option value="Teknisk Fysik">Teknisk Fysik</option>
-                        <option value="Maskin">Maskin</option>
-                        <option value="dljfka">dfdlksfj</option>
-                        <option value="LOllxx">dsjf</option>
-                        <option value="ekon">ekon</option>
                     </select>
                     <button className="loggin-button" type="submit">Start</button>
                 </form>

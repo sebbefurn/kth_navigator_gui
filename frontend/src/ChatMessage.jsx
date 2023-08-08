@@ -21,7 +21,7 @@ const ChatMessage = ({ message }) => {
         if (floor === "None") {
           prefix = "_______";
         } else {
-          prefix = `floor <b>${floor}</b>`
+          prefix = `Våning <b>${floor}</b>`
         }
         
         const link = specify_floor ? ` ${prefix}&nbsp&nbsp&nbsp->&nbsp&nbsp&nbsp<a href="${url}" target="_blank" rel="noopener noreferrer">${room}</a>` : `<a href="${url}" target="_blank" rel="noopener noreferrer">${room}</a>`;

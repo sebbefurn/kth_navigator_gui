@@ -6,6 +6,16 @@ from .serializers import TextBlockSerializer, UserSerializer
 from chatbot.openai_api import main
 
 @api_view(['POST'])
+def clear_chat(request):
+    if request.method == 'POST':
+        user_id = request.data['user']
+        print(f"Before: {TextBlock.objects.filter(user=user_id)}")
+        TextBlock.objects.filter(user=user_id).delete()
+        print(f"After: {TextBlock.objects.filter(user=user_id)}")
+        return JsonResponse({'success': True})
+    return JsonResponse({'error': 'Invalid request method'}, status=400)
+
+@api_view(['POST'])
 def create_user(request):
     if request.method == 'POST':
         serializer = UserSerializer(data=request.data)

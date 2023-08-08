@@ -177,6 +177,22 @@ color: white;
     }
 }
 
+.clear-button {
+    background-color: #1b1919; /* Bright blue */
+    color: #fff;
+    padding: 0.8rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 20rem;
+
+    /* Adding hover effect */
+    &:hover {
+        background-color: #110f0f;
+    }
+}
+
 .message {
   padding-left: 40px;
   padding-right: 40px;
