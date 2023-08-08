@@ -3,8 +3,9 @@
   display: flex;
   background-color: #343541;
   color: white;
-  position: absolute;
+  position: fixed;
   top: 0;bottom: 0;right: 0;left: 0;
+  overflow: overlay;
 }
 
 .chat-input-holder {
@@ -27,7 +28,7 @@ justify-content: center;
   width: 100%;
 }
 
-form {
+.main-chat-form {
   width: 90%;
 }
 
@@ -125,6 +126,55 @@ color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* subtle shadow */
+}
+
+.loggin-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* gives space between each child element */
+}
+
+.loggin-label {
+  font-weight: bold;
+  margin-bottom: 0rem;
+}
+
+.loggin-options {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loggin-button {
+    background-color: #007BFF; /* Bright blue */
+    color: #fff;
+    padding: 1rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+
+    /* Adding hover effect */
+    &:hover {
+        background-color: #0056b3;
+    }
 }
 
 .message {

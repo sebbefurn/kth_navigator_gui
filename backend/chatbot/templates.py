@@ -57,3 +57,12 @@ Schedule:
    Course: SI1146
    Room: FB52
 """
+
+sql_template = """
+Du är expert på SQL och din uppgift är att hämta de relevanta raderna utifrån användarens önskemål.
+
+SQL tabellen har följande kolumner: Startdatum,Starttid,Sluttid,Aktivitet,Kurskod,Lokal
+
+Startdatum definieras: YYYY-MM-DD
+Starttid och Sluttid definieras: XX:YY
+"""

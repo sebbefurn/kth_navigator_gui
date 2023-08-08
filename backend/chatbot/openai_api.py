@@ -6,6 +6,7 @@ import re
 from Levenshtein import distance
 from api.models import TextBlock, User
 import math
+import mysql.connector
 
 # OpanAI setup
 openai.api_key_path = "/home/anon/.secret"
@@ -48,10 +49,10 @@ functions=[
 }}]
 
 system_template = f"""
-You are an assistant at the university of KTH and your task is to help students navigate campus and interpret their schedule in a serious manner.
-Your abilities are that you can read their schedule and provide them with directions to different buildings, rooms and parks around campus.
-Be as short and concise as possible in your answers and stick to your task, and if you're not sure about something you should say so. 
-The current date is {datetime.date.today()}
+Du är en assistent vid KTH universitet och din uppgift är att hjälpa studenter att navigera runt campus och tolka deras schema på ett seriöst sätt.
+Dina förmågor är att du kan läsa deras schema och ge dem vägbeskrivningar till olika byggnader, rum och parker runt campus.
+Var så kort och koncis som möjligt i dina svar och håll dig till din uppgift, och om du inte är säker på något bör du säga det.
+Dagens datum är {datetime.date.today()}.
 """
 """
 user_question = "Where can I find E, V and B12?"
@@ -167,30 +168,80 @@ def format_date(timespan):
 
     return date_ans
 
+def get_schedule(x):
+    if (len(x) == 3):
+        messages, grade, program = x
+    else:
+        print("User not logged in")
+        exit(1)
 
-def make_location_list(rooms):
-    df = pd.read_csv("/home/anon/Code/Other/test/chatbot/Data/regex_places.csv", delimiter='|')
-    ret = []
-    check = []
-    for i in df.iterrows():
-        name = str(i[1][0]).strip()
-        if name in rooms:
-            coordinates = i[1][1]
-            ret.append(f"[{name}]({coordinates})")
-            check.append(name)
+    print(f"grade: {grade}, program: {program}")
 
-    for i in rooms:
-        if i.strip() not in check:
-            ret.append(i)
+    sql_template = f"""
+Du är expert på SQL och din uppgift är att hämta de relevanta raderna utifrån användarens önskemål. Din SQL query ska alltid börja med "SELECT * FROM" oberoende vad som frågas efter.
 
+SQL tabellen heter schedule_tefy_1 och har följande kolumner: Startdatum,Starttid,Sluttid,Aktivitet,Kurskod,Lokal
 
-    return ret
+Startdatum definieras: YYYY-MM-DD
+Starttid och Sluttid definieras: XX:YY
 
+Det här är de aktiviteter som förekommer: Föreläsning, Övning, Datorlaboration, Kontrollskrivning, Omtenta, Tentadag, Eget arbete
+
+Jag vill kunna lägga in ditt svar i mysql prompten direkt, så se till att endast skriva SQL queryn utan någonting annat.
+
+Det nuvarande datumet är: {datetime.datetime.now()}
+"""
+
+    messages[0] = {"role": "system", "content": sql_template}
+
+    sql_query = openai.ChatCompletion.create(
+        model=llm4,
+        messages=messages,
+    ).choices[0].message.content
+
+    mydb = mysql.connector.connect(
+        host="localhost",
+        user="navigator",
+        password="ploppa123"
+    )
+
+    mycursor = mydb.cursor()
+
+    print("------\nSQL QUERY: " + sql_query + "\n----------\n")
+    for message in messages:
+        print(f"role: {message['role']}\ncontent: {message['content']}\n\n")
+
+    mycursor.execute("use kth_navigator;")
+    try:
+        mycursor.execute(sql_query)
+    except:
+        print("Failed query")
+
+    res = mycursor.fetchall()
+    print(f"RES: {res}")
+
+    ans = "Startdatum|Starttid|Sluttid|Aktivitet|Kurskod|Lokal\n"
+    
+    for i in res:
+        ans += '|'.join(i)
+        ans += '\n'
+
+    ret = ""
+    for row in res:
+        places = row[5]
+        ret += (','.join(row[:5]))
+        print(row)
+        ret += ',"' + ','.join(re.findall(r'\[([^,]+)', places)) + '"'
+        ret += '\n'
+
+    print(f"RET: {ret}")
+    return [ans, ret]
+
+"""
 def get_schedule(arr):
     start, end, grade = arr
     start = start.strip()
     end = end.strip()
-    activities = []
     print(f"start: {start}, end: {end}")
 
     start_date = datetime.datetime.strptime(start, "%Y-%m-%d")
@@ -199,7 +250,7 @@ def get_schedule(arr):
     end_date = min(end_date, start_date+datetime.timedelta(days=10))
 
     if start_date > datetime.datetime.strptime("2024-01-15", "%Y-%m-%d"):
-        return "Schemat är avkapat vid 15e January 2024."
+        return "Schemat är avkapat vid 15e Januari 2024."
 
     ans = ""
     with open(f"./chatbot/Data/tefy_schedule_s{grade}.csv") as file:
@@ -217,6 +268,7 @@ def get_schedule(arr):
         return f"Det verkar inte vara några aktiviteter mellan {start} och {end}"
     print(f"schedule: {ans}")
     return ans
+"""
 
 def get_microwaves():
     # Read data from microwave file and just return it pretty much
@@ -228,14 +280,14 @@ def get_role(role):
     else:
         return "assistant"
 
-def main(user_id, grade):
+def main(user):
     messages = [
         {"role": "system", "content": system_template},
     ]
 
     # Gets the chatlog for the specified user with and id of user_id
-    text_blocks = TextBlock.objects.filter(user=user_id).order_by('created_at')
-    start = max(0, len(text_blocks)-4)
+    text_blocks = TextBlock.objects.filter(user=user.id).order_by('created_at')
+    start = max(0, len(text_blocks)-6)
     text_blocks = text_blocks[start:]
 
     # Adds the chatlog to 'messages'
@@ -265,7 +317,7 @@ def main(user_id, grade):
     if function_name == 'get_locations':
         function_arguments = function_arguments['locations']
     else:
-        function_arguments = [function_arguments['start_date'], function_arguments['end_date'], grade]
+        function_arguments = [messages, user.grade, user.course]
 
     function_name = eval(function_name)
     func_response = function_name(function_arguments)

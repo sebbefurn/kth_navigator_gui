@@ -39,7 +39,8 @@ const ChatMessage = ({ message }) => {
       let prev_date = "!";
   
       const renderTable = tableRows.map((line, index) => {
-        const row = Papa.parse(line, { delimiter: ',', skipEmptyLines: true }).data[0];
+        const row = line.split('|')
+        //const row = Papa.parse(line, { delimiter: '|', skipEmptyLines: true }).data[0];
         const date = row[0];
         if (date !== prev_date) {
           colorState = !colorState;
@@ -66,8 +67,8 @@ const ChatMessage = ({ message }) => {
   
   
     const isTableRow = (text) => {
-      const dateRegex = /^\d{4}-\d{2}-\d{2},/;
-      const second_regex = /^Startdatum,Starttid/
+      const dateRegex = /^\d{4}-\d{2}-\d{2}\|/;
+      const second_regex = /^Startdatum\|Starttid/
       return dateRegex.test(text) || second_regex.test(text);
     };
      

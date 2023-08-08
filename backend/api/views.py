@@ -21,10 +21,15 @@ def create_text(request):
         serializer = TextBlockSerializer(data=request.data)
         if serializer.is_valid():
             serializer.save()
-            response = main(serializer.data['user'], serializer.data['grade'])
             user = User.objects.filter(id=serializer.data['user'])[0]
-            gpt_message = TextBlock(user=user, is_user=False, text=response, grade=serializer.data['grade'])
-            gpt_message.save()
-            return JsonResponse({'message': f"{response}"})
+            response = main(user)
+            if type(response) == list:
+                gpt_message = TextBlock(user=user, is_user=False, text=response[1])
+                gpt_message.save()
+                return JsonResponse({'message': f"{response[0]}"})
+            else:
+                gpt_message = TextBlock(user=user, is_user=False, text=response)
+                gpt_message.save()
+                return JsonResponse({'message': f"{response}"})
         return JsonResponse(serializer.errors, status=400)
     return JsonResponse({'error': 'Invalid request method'}, status=400)

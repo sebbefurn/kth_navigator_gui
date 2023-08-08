@@ -4,22 +4,22 @@ import Papa from 'papaparse'
 import axios from 'axios';
 import ChatMessage from './ChatMessage.jsx'
 import EmptyPage from './EmptyPage';
+import Login from './Login';
 
-const IP = 'http://188.166.164.235';
+const IP = 'http://localhost:8000';
 
 function App() {
   const [selectedValue, setSelectedValue] = useState(1) 
   const [user_id, setUserId] = useState()
   const [input, setInput] = useState("");
   const [chatLog, setChatLog] = useState([]);
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-  // Function to create a new user
-  const createUser = async () => {
+  const createUser = async (grade, program) => {
     try {
       const response = await axios.post(`${IP}/api/create-user/`, {
-        course: null,
-        grade: null,
+        course: program,
+        grade: grade,
       });
       const new_id = response.data['user_id']; // Get the user ID from the response
       setUserId(new_id);
@@ -29,9 +29,6 @@ function App() {
     }
   };
 
-    createUser(); // Call the function to create a new user when the component mounts
-  }, []);
-
   async function handleSubmit(e) {
     e.preventDefault();
     setChatLog((chatLog) => [...chatLog, {user: "me", message: `${input}`}]);
@@ -40,14 +37,11 @@ function App() {
       text: `${input}`,
       user: user_id,
       is_user: true,
-      grade: selectedValue,
     })
       .then(response => {
         // Handle the response (e.g., display success message)
         const gpt_message = response.data['message'];
-        console.log(gpt_message)
         setChatLog((chatLog) => [...chatLog, {user: "gpt", message: `${gpt_message}`}]);
-        console.log(gpt_message);
       })
       .catch(error => {
         // Handle any errors
@@ -59,7 +53,9 @@ function App() {
 
   // Function to scroll to the bottom of the chat log container
   const scrollToBottom = () => {
-    chatLogRef.current.scrollTop = chatLogRef.current.scrollHeight;
+    if (chatLogRef.current) {
+      chatLogRef.current.scrollTop = chatLogRef.current.scrollHeight;
+    }
   };
 
   // Scroll to bottom whenever the chatLog updates
@@ -67,8 +63,17 @@ function App() {
     scrollToBottom();
   }, [chatLog]);
 
+  const handleLogin = (grade, program) => {
+    createUser(grade, program);
+    setIsLoggedIn(true);
+  };
+
   return (
   <div className="App">
+    {!isLoggedIn ? (
+      <Login onLogin={handleLogin} />
+    ) : (
+
     <section className="chatbox">
       {chatLog.length === 0 && EmptyPage()}
       <div className="chat-log" ref={chatLogRef}>
@@ -77,7 +82,7 @@ function App() {
         ))}
       </div>
     <div className="chat-input-holder">
-      <form onSubmit={handleSubmit}>
+      <form className="main-chat-form" onSubmit={handleSubmit}>
         <div className="input-container">
           <input
             value={input}
@@ -101,6 +106,7 @@ function App() {
       </form>
     </div>
     </section>
+    )}
   </div>
   );
 }

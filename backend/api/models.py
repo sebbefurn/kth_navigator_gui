@@ -9,7 +9,6 @@ class TextBlock(models.Model):
     is_user = models.BooleanField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     created_at = models.DateTimeField(auto_now_add=True)
-    grade = models.IntegerField()
 
     def __str__(self):
         return self.text
