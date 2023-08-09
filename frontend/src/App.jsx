@@ -6,7 +6,7 @@ import ChatMessage from './ChatMessage.jsx'
 import EmptyPage from './EmptyPage';
 import Login from './Login';
 
-const IP = 'http://localhost:8000';
+const IP = 'http://188.166.164.235';
 
 function App() {
   const [selectedValue, setSelectedValue] = useState(1) 
@@ -23,7 +23,6 @@ function App() {
       });
       const new_id = response.data['user_id']; // Get the user ID from the response
       setUserId(new_id);
-      console.log(new_id);
     } catch (error) {
       console.error(error);
     }

@@ -105,7 +105,6 @@ def get_location(location):
             else:
                 ret += f"None]"
             # Do some more stuff with coordinates
-            # print(coordinates)
             return ret
 
     # Check the levenshtein-places
@@ -130,7 +129,6 @@ def get_location(location):
     else:
         ret += f"None]"
     # Do some stuff with coordinates
-    #print(best_guess)
     return ret
 
 # The callable functions
@@ -169,10 +167,8 @@ def get_schedule(x):
     if (len(x) == 3):
         messages, grade, program = x
     else:
-        print("User not logged in")
         exit(1)
 
-    print(f"grade: {grade}, program: {program}")
 
     sql_template = f"""
 Du är expert på SQL och har som uppgift att skriva en SQL query till mitt schema. 
@@ -204,24 +200,21 @@ Kom ihåg att inte skriva någonting annat i ditt svar förutom SQL queryn.
 
     mydb = mysql.connector.connect(
         host="localhost",
-        user="navigator",
-        password="ploppa123"
+        user="root",
+        password="ploppa1234",
+        database="kth_navigator",
+        port=6603
     )
 
     mycursor = mydb.cursor()
 
-    print("------\nSQL QUERY: " + sql_query + "\n----------\n")
-    for message in messages:
-        print(f"role: {message['role']}\ncontent: {message['content']}\n\n")
 
-    mycursor.execute("use kth_navigator;")
     try:
         mycursor.execute(sql_query)
     except:
-        print("Failed query")
+        exit(1)
 
     res = mycursor.fetchall()
-    print(f"RES: {res}")
 
     ans = "Startdatum|Starttid|Sluttid|Aktivitet|Kurskod|Lokal\n"
 
@@ -240,46 +233,11 @@ Kom ihåg att inte skriva någonting annat i ditt svar förutom SQL queryn.
     for row in res:
         places = row[5]
         ret += (','.join(row[:5]))
-        print(row)
         ret += ',"' + ','.join(re.findall(r'\[([^,]+)', places)) + '"'
         ret += '\n'
 
     ret += additional
-    print(f"RET: {ret}")
     return [ans, ret]
-
-"""
-def get_schedule(arr):
-    start, end, grade = arr
-    start = start.strip()
-    end = end.strip()
-    print(f"start: {start}, end: {end}")
-
-    start_date = datetime.datetime.strptime(start, "%Y-%m-%d")
-    end_date = datetime.datetime.strptime(end, "%Y-%m-%d")
-
-    end_date = min(end_date, start_date+datetime.timedelta(days=10))
-
-    if start_date > datetime.datetime.strptime("2024-01-15", "%Y-%m-%d"):
-        return "Schemat är avkapat vid 15e Januari 2024."
-
-    ans = ""
-    with open(f"./chatbot/Data/tefy_schedule_s{grade}.csv") as file:
-        ans += file.readline()
-        print(grade)
-        for line in file.readlines():
-            try:
-                template_date = datetime.datetime.strptime(line[0:10], "%Y-%m-%d")
-            except:
-                continue
-            if "Begin" in line or start_date <= template_date <= end_date:
-                ans += line
-    
-    if ans.strip() == "Startdatum,Starttid,Sluttid,Aktivitet,Tillfälleskod/kurskod,Lokal":
-        return f"Det verkar inte vara några aktiviteter mellan {start} och {end}"
-    print(f"schedule: {ans}")
-    return ans
-"""
 
 def get_microwaves():
     # Read data from microwave file and just return it pretty much
