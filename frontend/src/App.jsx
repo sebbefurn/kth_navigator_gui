@@ -25,7 +25,7 @@ function App() {
       setUserId(new_id);
       console.log(new_id);
     } catch (error) {
-      console.error(error);
+      console.log("ERROR createUser")
     }
   };
 
@@ -35,8 +35,8 @@ function App() {
     setInput("");
     axios.post(`${IP}/api/create-text/`, {
       text: `${input}`,
-      user: user_id,
       is_user: true,
+      user: user_id,
     })
       .then(response => {
         // Handle the response (e.g., display success message)
@@ -45,7 +45,7 @@ function App() {
       })
       .catch(error => {
         // Handle any errors
-        console.error(error);
+        console.log("ERROR handleSubmit");
     });
   }
 

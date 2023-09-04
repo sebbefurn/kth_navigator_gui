@@ -51,31 +51,6 @@ Dina förmågor är att du kan läsa deras schema och ge dem vägbeskrivningar t
 Var så kort och koncis som möjligt i dina svar och håll dig till din uppgift, och om du inte är säker på något bör du säga det.
 Dagens datum är {datetime.date.today()}.
 """
-"""
-user_question = "Where can I find E, V and B12?"
-
-messages = []
-messages.append({"role": "system", "content": system_template})
-messages.append({"role": "user", "content": user_question})
-
-response = openai.ChatCompletion.create(
-    model=llm4,
-    messages=messages,
-    functions=functions,
-    function_call="auto"
-).choices[0].message
-
-print(response)
-function_name = response['function_call']['name']
-function_arguments = response.to_dict()['function_call']['arguments']
-function_arguments = json.loads(function_arguments)['locations']
-
-print(function_name)
-print(function_arguments)
-function_name = eval(function_name)
-print(function_name(function_arguments))
-exit()
-"""
 
 # Test if user asked for specific place with regex
 def test_name(name, location):
@@ -205,7 +180,7 @@ Kom ihåg att inte skriva någonting annat i ditt svar förutom SQL queryn.
     mydb = mysql.connector.connect(
         host="localhost",
         user="navigator",
-        password="ploppa123"
+        password="fake_password"
     )
 
     mycursor = mydb.cursor()

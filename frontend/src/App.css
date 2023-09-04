@@ -71,7 +71,7 @@ color: white;
 
 .chat-log {
   text-align: left;
-  max-height: 89%;
+  max-height: 85%;
   overflow-y: auto;
 }
 
